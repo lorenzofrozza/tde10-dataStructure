@@ -68,7 +68,7 @@ public class PrintQueue {
 //        docs.push(d5);
 //        docs.push(d6);
 
-        // Finding the biggest document(s)
+        // Finding the biggest document
         while (!docs.isEmpty()) {
             Document doc = docs.pop();
             if (doc.getNumberOfPages() == lastPage) {
