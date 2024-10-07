@@ -42,11 +42,10 @@ public class GenericQueue<T> {
             throw new IllegalStateException("Queue is empty");
         }
         T element = (T) elements[0];
-        // Move todos os elementos para a esquerda
         for (int i = 1; i < size; i++) {
             elements[i - 1] = elements[i];
         }
-        elements[--size] = null; // Remove a referência do último elemento
+        elements[--size] = null;
         return element;
     }
 
